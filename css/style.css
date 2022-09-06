@@ -20,12 +20,25 @@ html {
     display: flex;
 }
 
+.section-title {
+    color: black;
+    font-size: 2rem;
+    padding: .7rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.section-paragraph {
+    line-height: 2rem;
+    padding: .7em;
+}
+
 /* HEADER */
 
     /* main-header */
 header .main-header {
     background-color: #265ee9;
-    height: 12vh;
+    min-height: 12vh;
 }
 
 .container-header {
@@ -129,7 +142,9 @@ header ul li a {
 /* MAIN */
 
 .body-1, .body-2, .body-3 {
-    height: 85vh;
+    min-height: 85vh;
+    align-items: center;
+
 }
 
 .body-1, .body-3 {
@@ -137,44 +152,56 @@ header ul li a {
 }
 
 .body-2 {
-    background-color: #d3d3d3;
+    background-color: #f6f6f6;
 }
 
     /* body-1 */
 
 .body-1 .text-body-1 {
-    width: 60%;
+    width: 70%;
     height: 80%;
-    background-color: #1d90ff;
+    vertical-align: middle;
 }
 
 .body-1 .img-body-1 {
-    width: 40%;
+    width: 30%;
     height: 80%;
-    background-color: #ee81ee;
 }
 
 .container-body-1 {
     align-items: center;
 }
+
+.img-body-1 {
+    text-align: left;
+}
+
+
+
+.text-body-1 img {
+    width: 100%;
+}
+
     /* /body-1 */
 
     /* body-2 */
 
 .body-2 .img-body-2 {
-    width: 40%;
+    width: 30%;
     height: 80%;
-    background-color: #ee81ee;
 }
 
 .body-2 .text-body-2 {
-    width: 60%;
+    width: 70%;
     height: 80%;
-    background-color: #1d90ff;
 }
 
 .container-body-2 {
     align-items: center;
+}
+
+.text-body-2 img{
+    width: 100%;
 }
 
     /* /body-2 */
@@ -182,19 +209,21 @@ header ul li a {
     /* body-3 */
 
     .body-3 .img-body-3 {
-        width: 40%;
+        width: 30%;
         height: 80%;
-        background-color: #ee81ee;
     }
     
     .body-3 .text-body-3 {
-        width: 60%;
+        width: 70%;
         height: 80%;
-        background-color: #1d90ff;
     }
     
     .container-body-3 {
         align-items: center;
+    }
+
+    .container-body-3 .text-body-3 img {
+        width: 100%;
     }
 
     /* /body-3 */
@@ -202,15 +231,34 @@ header ul li a {
     /* body-4 */
 
 .body-4 {
-    height: 120vh;
-    background-color: #d3d3d3;
+    min-height: 100vh;
+    background-color: #f6f6f6;
     align-items: center;
 }
 
 .container-body-4 {
-    background-color: green;
     height: 85%;
     width: 70%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.call {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.btn3 {
+    background-color: #7389da;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
     /* /body-4 */
