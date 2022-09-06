@@ -144,6 +144,7 @@ header ul li a {
 .body-1, .body-2, .body-3 {
     min-height: 85vh;
     align-items: center;
+    padding: 1em;
 
 }
 
@@ -269,7 +270,21 @@ header ul li a {
 
 footer {
     background-color: #23272a;
-    height: 65vh;
+    min-height: 65vh;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: .7rem;
+    font-size: .8rem;
+    color: white;
+}
+
+.primo-li {
+    color: #7389da;
 }
 
     /* footer-up */
@@ -279,24 +294,46 @@ footer {
 }
 
 .container-footer-up {
-    align-items: center;
+    align-items: flex-start;
+    padding: 1em;
 }
 
 .col {
     height: 80%;
-
-    /* DELETE */
-    border: 1px solid black;
 }
 
 .col-1 {
-    background-color: red;
-    width: 40%;
+    width: 30%;
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 1em;
 }
 
 .col-2, .col-3, .col-4, .col-5 {
-    background-color: #21b2aa;
-    width: 15%;
+    width: calc(70% / 4);
+    padding: 1em;
+    text-align: left;
+}
+
+.col-1 h3, .col-1 span{
+    margin-bottom: 1.2rem;
+    color: #7389da;
+}
+
+.col-1 span img {
+    width: 20%;
+    vertical-align: middle;
+}
+
+.col-1 span {
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+}
+
+i {
+    color: white;
+    margin-right: 1.5rem;
 }
 
 .footer-down {
@@ -305,14 +342,10 @@ footer {
 
     /* /footer-up */
 
-footer hr{
-    color: white;
-}
-
     /* footer-down */
 
 .logo-and-button {
-    background-color: green;
+    /* background-color: green; */
     width: 100%;
     height: 80%;
 }
@@ -328,14 +361,22 @@ footer hr{
 .logo-and-button {
     justify-content: space-between;
     align-items: center;
+    padding: 2em;
 }
 
-.logo-footer, button {
-    padding: 3px 6px;
-}
-
-.logo-footer {
+hr {
     background-color: white;
+    width: 70%;
+    margin: auto;
+}
+
+.btn4 {
+    background-color: #7389da;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: .75rem;
 }
     /* /footer-down */
 
