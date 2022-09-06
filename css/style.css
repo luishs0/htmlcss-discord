@@ -6,6 +6,10 @@
 
 /* COMMON */
 
+html {
+    font-family: Whitney, Helvetica, sans-serif;
+}
+
 .container {
     width: 70%;
     margin: auto;
@@ -20,7 +24,7 @@
 
     /* main-header */
 header .main-header {
-    background-color: #add8e6;
+    background-color: #265ee9;
     height: 12vh;
 }
 
@@ -29,14 +33,9 @@ header .main-header {
 }
 
 .section-header {
-    background-color: #d9a51f;
     padding: 3px;
     display: flex;
     align-items: center;
-
-    /* DELETE */
-    height: 6.5vh;
-    border: 1px solid black;
 }
 
 .section-header-1 {
@@ -63,21 +62,65 @@ header ul {
 }
 
 header ul li {
-    padding: 5px;
+    padding: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    color: #1e246a;
+    font-size: 0.8rem;
+}
+
+.section-header-1 img {
+    vertical-align: middle;
 }
     /* /main-header */
 
     /* banner */
 .banner {
-    background-color: #00008b;
-    height: 70vh;
+    background-color: #265ee9;
+    min-height: 70vh;
     align-items: center;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
 
 .container-banner {
-    background-color: #ee81ee;
     height: 80%;
     width: 60%;
+    text-align: center;
+    padding: 3em;
+    color: white;
+}
+
+.container-banner h2 {
+    font-size: 2.2rem;
+    padding: .7em;
+}
+
+.container-banner p {
+    padding: 1.5em;
+}
+
+.container-banner a {
+    margin-right: 1rem;
+}
+
+.btn2 {
+    color: white;
+    background-color: #23272a;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
 }
     /* /banner */
 
