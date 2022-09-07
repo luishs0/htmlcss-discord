@@ -38,7 +38,7 @@ html {
     /* main-header */
 header .main-header {
     background-color: #265ee9;
-    min-height: 12vh;
+    /* min-height: 12vh; */
 }
 
 .container-header {
@@ -72,6 +72,7 @@ header ul {
     list-style-type: none;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
 header ul li {
@@ -94,6 +95,7 @@ header ul li a {
 
 .section-header-1 img {
     vertical-align: middle;
+    max-width: 100%;
 }
     /* /main-header */
 
@@ -104,6 +106,7 @@ header ul li a {
     align-items: center;
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    background-position: center;
 }
 
 .container-banner {
@@ -154,6 +157,15 @@ header ul li a {
 
 .body-2 {
     background-color: #f6f6f6;
+}
+
+.wave {
+    display: block;
+    opacity: .037;
+}
+
+.wave-reverse {
+    transform: rotateX(180deg);
 }
 
     /* body-1 */
@@ -232,7 +244,7 @@ header ul li a {
     /* body-4 */
 
 .body-4 {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #f6f6f6;
     align-items: center;
 }
@@ -245,6 +257,7 @@ header ul li a {
     align-items: center;
     padding: 1em;
 }
+
 
 .call {
     font-size: 1.5rem;
